@@ -23,5 +23,10 @@ namespace CoreLib
             SetCursorPosition(X,Y);
             Write(Symbol);
         }
+
+        internal bool IsHit(Point point)
+        {
+            return X = point.X && Y == point.Y;
+        }
     }
 }

@@ -14,7 +14,19 @@ namespace CoreLib
         {
             foreach (Point point in Locus) point.Draw();
         }
-
+        
+        public bool IsHit(Shape outer)
+        {
+            foreach(Point pOuter in outer)
+            {
+                foreach(Point pInner in this)
+                {
+                    if (pInner.IsHit(pOuter))
+                        return true;
+                }
+            }
+            return false;
+        }
         public IEnumerator<Point> GetEnumerator() => Locus.GetEnumerator();
         
 

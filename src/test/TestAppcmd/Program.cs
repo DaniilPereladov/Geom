@@ -13,6 +13,11 @@ namespace TestAppcmd
                  line2 = new VerticalLine(3, 2, 6);
             line1.Draw();
             line2.Draw();
+            if(line1 is Shape shape1 && line2 is Shape shape2)
+            {
+                WriteLine();
+                WriteLine(shape2.IsHit(shape1));
+            }
             ReadKey();
         }
     }
