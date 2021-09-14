@@ -8,6 +8,9 @@ namespace CoreLib
 {
     public interface IDraw
     {
-        
+        void Draw()
+        {
+         
+        }
     }
 }
