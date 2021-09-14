@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoreLib
+namespace CoreLib.Lines
 {
-    public interface IDraw
+    public abstract class Line : Shape
     {
-        
+
     }
 }

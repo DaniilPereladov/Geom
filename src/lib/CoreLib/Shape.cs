@@ -11,7 +11,7 @@ namespace CoreLib
         protected virtual IList<Point> Locus { get; init; } = new List<Point>();
         public void Draw()
         {
-            throw new NotImplementedException();
+            foreach (Point point in Locus) point.Draw();
         }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoreLib
+namespace CoreLib.Shapes.Lines
 {
-    public interface IDraw
+    public class VerticalLine: Line
     {
         
     }
